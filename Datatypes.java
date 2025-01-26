@@ -44,6 +44,9 @@ public class Datatypes {
         // System.out.println(charExample);
 
 
+    //non-primitive data types
+    // Non-primitive data types are called reference types because they refer to objects
+
     }
 }
 
