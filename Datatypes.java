@@ -1,3 +1,4 @@
+import java.util.Arrays; 
 public class Datatypes {
     public static void main (String[] args){
         // variables --> variables are like containers  where  values can store .
@@ -46,6 +47,21 @@ public class Datatypes {
 
     //non-primitive data types
     // Non-primitive data types are called reference types because they refer to objects
+    // 1) string : sequence of character
+    // String college="nepathya colleege";
+    // System.out.println(colleege);
+
+    // 2) array: colloection of element with same datatypes
+    // int[] arrayExample = {1, 2, 3, 4};
+    // System.out.println(Arrays.toString(arrayExample));
+
+    //3) class ; blueprint of an object
+
+    // 4) Enum: constants values in object (eg: dropdown in gender field (male,female))
+
+    //constants:constant are the keywords whose values cannot be ressigmed;
+
+
 
     }
 }
