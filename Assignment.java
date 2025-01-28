@@ -8,8 +8,8 @@ public class Assignment {
         // System.out.println("Addition of two numbers is " + add);
 
         // subtract two float number
-        // byte c = 12;
-        // byte d = 34;
+        // float c = 12;
+        // float d = 34;
         // float sub = (c - d);
         // System.out.println("Subtraction of two numbers is " + sub);
 
@@ -21,6 +21,9 @@ public class Assignment {
         // The ASCII value 66 corresponds to the letter "B".
         // Explanation: In the ASCII table, the uppercase letter "B" has a decimal value
         // of 66
+
+        // char charexample = 66;
+        // System.out.println(charexample);
 
     }
 }
