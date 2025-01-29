@@ -40,17 +40,52 @@ public class Operators {
         // System.out.println("----------------------");
 
         // 4) Assignment Operator : it is used to assign the values (+=,-=,/=,*=,%=)
-        int f = 2;
-        int g = 3;
-        System.out.println("f+=g :" + (f += g));
+
+        // int f = 2;
+        // int g = 3;
+        // System.out.println("f+=g :" + (f += g));
+        // System.out.println("----------------------");
+        // System.out.println("f-=g :" + (f -= g));
+        // System.out.println("----------------------");
+        // System.out.println("f/=g :" + (f /= g));
+        // System.out.println("----------------------");
+        // System.out.println("f*=g :" + (f *= g));
+        // System.out.println("----------------------");
+        // System.out.println("f%=g :" + (f %= g));
+        // System.out.println("----------------------");
+
+        // 5)Ternary operator:
+        // syntax (condition) ? "if true" : "if false"
+
+        // int k = 2;
+        // int l = 5;
+        // String result = (k > l) ? "k is greater than l" : "k is smaller than l";
+        // System.out.println(result);
+
+        // 6) Bitwise Operator : operation on bits
+        // operators : AND & , OR | , XOR ^ , COMPLIMENT ~ ,Left shift<< ,right shift >>
+        // , >>> (Zero fill right shift)
+
+        // ( 8 4 2 1 )
+        // ( 1 0 0 1 )
+
+        int m = 9; // 1001
+        int n = 10; // 1010
+
+        System.out.println(" the bitwise AND m&n:" + (m & n)); // 1000
         System.out.println("----------------------");
-        System.out.println("f-=g :" + (f -= g));
+        System.out.println("m|n:" + (m | n));
         System.out.println("----------------------");
-        System.out.println("f/=g :" + (f /= g));
+        System.out.println("m^n:" + (m ^ n));
         System.out.println("----------------------");
-        System.out.println("f*=g :" + (f *= g));
+        System.out.println("~m:" + (~m));
         System.out.println("----------------------");
-        System.out.println("f%=g :" + (f %= g));
+        System.out.println("m<<1:" + (m << 1));
         System.out.println("----------------------");
+        System.out.println("m>>1:" + (m >> 1));
+        System.out.println("----------------------");
+        System.out.println("m>>>1:" + (m >>> 1));
+        System.out.println("----------------------");
+
     }
 }
