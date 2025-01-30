@@ -1,4 +1,7 @@
 public class Operators {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 
         // operator: operators are the symbol used to pertorm operation ( *,+, -, !=,==,
@@ -69,23 +72,75 @@ public class Operators {
         // ( 8 4 2 1 )
         // ( 1 0 0 1 )
 
-        int m = 9; // 1001
-        int n = 10; // 1010
+        // int m = 9; // 1001
+        // int n = 10; // 1010
 
-        System.out.println(" the bitwise AND m&n:" + (m & n)); // 1000
-        System.out.println("----------------------");
-        System.out.println("m|n:" + (m | n));
-        System.out.println("----------------------");
-        System.out.println("m^n:" + (m ^ n));
-        System.out.println("----------------------");
-        System.out.println("~m:" + (~m));
-        System.out.println("----------------------");
-        System.out.println("m<<1:" + (m << 1));
-        System.out.println("----------------------");
-        System.out.println("m>>1:" + (m >> 1));
-        System.out.println("----------------------");
-        System.out.println("m>>>1:" + (m >>> 1));
-        System.out.println("----------------------");
+        // System.out.println(" the bitwise AND m&n:" + (m & n)); // 1000
+        // System.out.println("----------------------");
+        // System.out.println("m|n:" + (m | n));
+        // System.out.println("----------------------");
+        // System.out.println("m^n:" + (m ^ n));
+        // System.out.println("----------------------");
+        // System.out.println("~m:" + (~m));
+        // System.out.println("----------------------");
+        // System.out.println("m<<1:" + (m << 1));
+        // System.out.println("----------------------");
+        // System.out.println("m>>1:" + (m >> 1));
+        // System.out.println("----------------------");
+        // System.out.println("m>>>1:" + (m >>> 1));
+        // System.out.println("----------------------");
+
+        // post increment and decrement operator
+
+        // int v = 5;
+        // System.out.println("post increment operator" + v++);
+        // System.out.println("----------------------");
+        // System.out.println("only one values" +v);
+        // System.out.println("----------------------");
+
+        // int d = 5;
+        // System.out.println("post decrement operator" + d--);
+        // System.out.println("----------------------");
+        // System.out.println("only one values" + d);
+        // System.out.println("----------------------");
+
+        // pre-increment and decrement operator
+
+        // int b = 5;
+        // System.out.println("pre-increment operator" + ++b);
+        // System.out.println("----------------------");
+        // System.out.println("only one values" +b);
+        // System.out.println("----------------------");
+
+        // int a = 5;
+        // System.out.println("pre-decrement operator" + --a);
+        // System.out.println("----------------------");
+        // System.out.println("only one values" +a);
+        // System.out.println("----------------------");
+
+        // shift operator: used to manipulate the bits
+        // left shift (<<): shifts the bits to the left and
+        // fills 0 on voids left as a result. The left shift operator essentially
+        // multiplies
+
+        // 101
+        // 0000 0101
+        // left-shift: 0 101* (*=0)
+        // output 0000 1010 (10)
+
+        // int z = 5;
+        // int leftshiftresult = (z << 2);
+        // System.out.println("left shift operator" + (leftshiftresult));
+        // System.out.println("----------------------");
+
+        // right shift(>>) : shifts the bits to the right and fills 0 on voids right as
+        // a result.
+        // The right shift operator essentially divides by 2
+
+        // int a = 5;
+        // int rightshiftresult = (a >> 1);
+        // System.out.println("right shift operator" + (rightshiftresult));
+        // System.out.println("----------------------");
 
     }
 }
