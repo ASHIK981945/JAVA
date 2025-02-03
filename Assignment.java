@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Assignment {
     public static void main(String[] args) {
 
@@ -65,6 +67,80 @@ public class Assignment {
 
         // int num = 7;
         // System.out.println("Right shift by 3 " + (num >> 3));
+
+        // to check whether the person is eligible to vote or not
+
+        // int age = 21;
+        // if (age >= 18) {
+        // System.out.println("you are eligible for voting");
+        // } else {
+        // System.out.println("you are not eligible for voting");
+        // }
+
+        // print the greater number among 3 numbers
+        int largest;
+        int a = 5;
+        int b = 10;
+        int c = 3;
+        if (a > b && a > c) {
+            largest = a;
+        } else if (b > a && b > c) {
+            largest = b;
+        } else {
+            largest = c;
+        }
+        System.out.println("largest number is " + largest);
+
+        // make a simple calculator with operation ( +, -, / ,*) using switch case
+
+        // char operator;
+        // Double number1, number2, result;
+
+        // // create an object of Scanner class
+        // Scanner input = new Scanner(System.in);
+
+        // // ask users to enter operator
+        // System.out.println("Choose an operator: +, -, *, or
+        // /");operator=input.next().charAt(0);
+
+        // // ask users to enter numbers
+        // System.out.println("Enter first number");number1=input.nextDouble();
+
+        // System.out.println("Enter second number");number2=input.nextDouble();
+
+        // switch(operator)
+        // {
+
+        // // performs addition between numbers
+        // case '+':
+        // result = number1 + number2;
+        // System.out.println(number1 + " + " + number2 + " = " + result);
+        // break;
+
+        // // performs subtraction between numbers
+        // case '-':
+        // result = number1 - number2;
+        // System.out.println(number1 + " - " + number2 + " = " + result);
+        // break;
+
+        // // performs multiplication between numbers
+        // case '*':
+        // result = number1 * number2;
+        // System.out.println(number1 + " * " + number2 + " = " + result);
+        // break;
+
+        // // performs division between numbers
+        // case '/':
+        // result = number1 / number2;
+        // System.out.println(number1 + " / " + number2 + " = " + result);
+        // break;
+
+        // default:
+        // System.out.println("Invalid operator!");
+        // break;
+        // }
+
+        // input.close();
 
     }
 }
