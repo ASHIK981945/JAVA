@@ -120,13 +120,33 @@ public class Assignment {
         // }
 
         // Ask a character from the use
-        Scanner Scanner = new Scanner(System.in);
-        System.out.println("enter you character:");
 
-        char character = Scanner.next().charAt(0);
-        System.out.println("display character:" + character);
+        // Scanner Scanner = new Scanner(System.in);
+        // System.out.println("enter you character:");
+
+        // char character = Scanner.next().charAt(0);
+        // System.out.println("display character:" + character);
+
+        // Scanner.close();
+
+        // ask a word from the user //java
+
+        // Scanner Scanner = new Scanner(System.in);
+        // System.out.println("enter you word:");
+
+        // String character = Scanner.next();
+        // System.out.println("display WORLD:" + character);
+
+        // Scanner.close();
+
+        // ask a sentence or string from the user
+
+        Scanner Scanner = new Scanner(System.in);
+        System.out.println("enter you word:");
+
+        String character = Scanner.nextLine();
+        System.out.println("display WORLD:" + character);
 
         Scanner.close();
-
     }
 }
