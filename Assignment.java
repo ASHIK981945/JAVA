@@ -141,12 +141,13 @@ public class Assignment {
 
         // ask a sentence or string from the user
 
-        Scanner Scanner = new Scanner(System.in);
-        System.out.println("enter you word:");
+        // Scanner Scanner = new Scanner(System.in);
+        // System.out.println("enter you word:");
 
-        String character = Scanner.nextLine();
-        System.out.println("display WORLD:" + character);
+        // String character = Scanner.nextLine();
+        // System.out.println("display WORLD:" + character);
 
-        Scanner.close();
+        // Scanner.close();
+
     }
 }
