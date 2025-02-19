@@ -96,30 +96,30 @@ public class Assignment {
 
         // make a simple calculator with operation ( +, -, / ,*) using switch case
 
-        // int a = 15;
-        // int b = 5;
+        int a = 15;
+        int b = 5;
 
-        // char operation = '+';
-        // switch (operation) {
-        // case '+':
-        // System.out.println("addition " + (a + b));
-        // break;
+        char operation = '+';
+        switch (operation) {
+            case '+':
+                System.out.println("addition " + (a + b));
+                break;
 
-        // case '-':
-        // System.out.println("subtraction " + (a - b));
-        // break;
+            case '-':
+                System.out.println("subtraction " + (a - b));
+                break;
 
-        // case '/':
-        // System.out.println("division " + (a / b));
-        // break;
+            case '/':
+                System.out.println("division " + (a / b));
+                break;
 
-        // case '*':
-        // System.out.println("multiplication" + (a * b));
-        // break;
+            case '*':
+                System.out.println("multiplication" + (a * b));
+                break;
 
-        // default:
-        // System.out.println("invalid operation");
-        // }
+            default:
+                System.out.println("invalid operation");
+        }
 
         // Ask a character from the use
 

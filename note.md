@@ -36,3 +36,39 @@ Java is case sensitive
 
 - **Datatypes**:The type of data that a variable can  hold.
 - **Variables**:are container where we can store values.
+
+
+-**class**(blueprint of an object)
+-**object**(instance of a class)
+**oop**:(object  oriented programmming)
+**features**:Abstraction ,polymorphim, inheritance,encapsulation, class and object ,modularity
+
+syntax:
+class classname{
+    // data number
+    //methods
+}
+
+-----------------------------------------------
+
+student student = new student();
+student.detail();
+class student{
+    string name;
+    string address;
+    
+    void default()
+    {
+        system.out.println(name+address);
+    }
+}
+
+
+
+constructor 
+constructor is a method that is 
+
+
+default constructor
+parameter constructor
+copy contructor

@@ -21,12 +21,12 @@ public class Function {
         // System.out.println(firstnumber);
         // System.out.println(secondnumber);
 
-        Scanner m = new Scanner(System.in);
-        System.out.println("enter the number");
-        int a = m.nextInt();
-        int b = m.nextInt();
-        int mutli = multinum(a, b);
-        System.out.println(mutli);
+        // Scanner m = new Scanner(System.in);
+        // System.out.println("enter the number");
+        // int a = m.nextInt();
+        // int b = m.nextInt();
+        // int mutli = multinum(a, b);
+        // System.out.println(mutli);
 
         // int a = 10;
         // int b = 20;

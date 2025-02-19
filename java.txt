@@ -1,0 +1,199 @@
+1. Explain any three Java Buzzwords and a Java program for Simple Interest.
+
+Three Java Buzzwords:
+
+1. Platform Independent – Java programs can run on any operating system without modification due to the Java Virtual Machine (JVM).
+
+
+2. Object-Oriented – Java follows an object-oriented programming (OOP) approach, meaning it models real-world entities using classes and objects.
+
+
+3. Robust – Java has strong memory management, exception handling, and automatic garbage collection to prevent crashes.
+
+
+
+Java Program for Simple Interest:
+
+import java.util.Scanner;
+
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter Principal Amount: ");
+        double principal = input.nextDouble();
+        
+        System.out.print("Enter Rate of Interest: ");
+        double rate = input.nextDouble();
+        
+        System.out.print("Enter Time in years: ");
+        double time = input.nextDouble();
+        
+        double simpleInterest = (principal * rate * time) / 100;
+        
+        System.out.println("Simple Interest: " + simpleInterest);
+        input.close();
+    }
+}
+
+
+---
+
+2. Different Types of Control Statements & Switch Case for Calculator
+
+Types of Control Statements in Java:
+
+1. Conditional Statements – if, if-else, switch
+
+
+2. Looping Statements – for, while, do-while
+
+
+3. Jump Statements – break, continue, return
+
+
+
+Calculator Program Using Switch Case:
+
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter first number: ");
+        double num1 = sc.nextDouble();
+        
+        System.out.print("Enter second number: ");
+        double num2 = sc.nextDouble();
+        
+        System.out.print("Choose operation (+, -, *, /): ");
+        char operator = sc.next().charAt(0);
+        
+        double result;
+        
+        switch (operator) {
+            case '+': result = num1 + num2;
+                      break;
+            case '-': result = num1 - num2;
+                      break;
+            case '*': result = num1 * num2;
+                      break;
+            case '/': 
+                if (num2 != 0)
+                    result = num1 / num2;
+                else {
+                    System.out.println("Division by zero is not allowed.");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("Invalid operator.");
+                return;
+        }
+        
+        System.out.println("Result: " + result);
+        sc.close();
+    }
+}
+
+
+---
+
+3. Explain Break, Continue, and Return Statement with Examples.t 
+Used to exit a loop or switch case.
+
+
+for (int i = 1; i <= 10; i++) {
+    if (i == 5) break; // Stops the loop when i is 5
+    System.out.println(i);
+}
+
+Continue Statement:
+
+Skips the current iteration and moves to the next one.
+
+
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) continue; // Skips printing 3
+    System.out.println(i);
+}
+
+Return Statement:
+
+Used to exit from a method and return a value.
+
+
+public class Example {
+    public static void main(String[] args) {
+        System.out.println(sum(5, 3));
+    }
+
+    public static int sum(int a, int b) {
+        return a + b; // Returns the sum of a and b
+    }
+}
+
+
+---
+
+4. Explain Arithmetic, Logical, and Relational Operators in Java.
+
+Arithmetic Operators:
+
+Used for mathematical operations: +, -, *, /, %
+
+
+int a = 10, b = 5;
+System.out.println("Sum: " + (a + b)); // Output: 15
+
+Logical Operators:
+
+Used for logical conditions: &&, ||, !
+
+
+boolean x = true, y = false;
+System.out.println(x && y); // Output: false
+
+Relational Operators:
+
+Used for comparison: ==, !=, >, <, >=, <=
+
+
+int p = 10, q = 20;
+System.out.println(p > q); // Output: false
+
+
+---
+
+5. Define Loop & Write a Program to Calculate Sum of First N Natural Numbers.
+
+Definition of Loop:
+
+A loop is used to execute a block of code repeatedly until a specific condition is met.
+
+Program to Calculate Sum of First N Natural Numbers:
+
+import java.util.Scanner;
+
+public class SumNaturalNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the value of n: ");
+        int n = sc.nextInt();
+        
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        
+        System.out.println("Sum of first " + n + " natural numbers is: " + sum);
+        sc.close();
+    }
+}
+
+
+---
+
+These answers cover all the topics needed for your test.
