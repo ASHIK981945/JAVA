@@ -1,11 +1,12 @@
-public   class Constructor{
+public class Constructor {
 
-    //default constructor
+    // default constructor
     ConstructorExample(){
-        System.out.println("constructor called")
+        System.out.println("constructor called");
     }
+
     public static void main(String[]agrs){
-        ConstructorExample Constructorexample = new ConstructorExample():
+        Constructor Constructorexample = new Constructor():
         // automatically called when an object is created
 
 
