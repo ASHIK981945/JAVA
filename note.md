@@ -72,3 +72,15 @@ constructor is a method that is
 default constructor
 parameter constructor
 copy contructor
+
+
+**ployymoxphism (having mutilp form)**
+
+# method overloading 
+```c
+int add (int a  , int b);
+int add (int a, int b , int c);
+int add (double a, double b);
+```
+
+**recursion**
