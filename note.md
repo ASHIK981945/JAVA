@@ -65,13 +65,69 @@ class student{
 
 
 
-constructor 
-constructor is a method that is 
+**constructor**
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. It can be used to set initial values for object attributes
+
+```c
+// Create a Main class
+public class Main {
+  int x;
+
+  // Create a class constructor for the Main class
+  public Main() {
+    x = 5;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+```
 
 
-default constructor
-parameter constructor
-copy contructor
+**default constructor**
+A constructor that has no parameters is known as default constructor. A default constructor is invisible. And if we write a constructor with no arguments, the compiler does not create a default constructor. It is taken out. It is being overloaded and called a parameterized constructor. The default constructor changed into the parameterized constructor. But Parameterized constructor can’t change the default constructor. The default constructor can be implicit or explicit.
+
+**Implicit Default Constructor**: If no constructor is defined in a class, the Java compiler automatically provides a default constructor. This constructor doesn’t take any parameters and initializes the object with default values, such as 0 for numbers, null for objects.
+
+**Explicit Default Constructor**: If we define a constructor that takes no parameters, it’s called an explicit default constructor. This constructor replaces the one the compiler would normally create automatically. Once you define any constructor (with or without parameters), the compiler no longer provides the default constructor for you.
+
+```c
+class GFG {
+
+    // Default Constructor
+    GFG() { System.out.println("Default constructor"); }
+
+    // Driver function
+    public static void main(String[] args)
+    {
+        GFG hello = new GFG();
+    }
+}
+```
+
+**parameter constructor**
+Constructors can also take parameters, which is used to initialize attributes.
+The following example adds an int y parameter to the constructor. Inside the constructor we set x to y (x=y). When we call the constructor, we pass a parameter to the constructor (5), which will set the value of x to 5:
+
+```c
+public class Main {
+  int x;
+
+  public Main(int y) {
+    x = y;
+  }
+
+  public static void main(String[] args) {
+    Main myObj = new Main(5);
+    System.out.println(myObj.x);
+  }
+}
+
+// Outputs 5
+```
+**copy contructor**
 
 
 **ployymoxphism (having mutilp form)**
@@ -84,3 +140,16 @@ int add (double a, double b);
 ```
 
 **recursion**
+
+
+**nested class**
+it is defined inside other class
+
+**fuctions**
+it promotes encopsulation
+code rcadibility
+
+
+**types**
+static nested class
+non-static nested class 
