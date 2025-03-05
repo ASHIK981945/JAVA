@@ -153,3 +153,21 @@ code rcadibility
 **types**
 static nested class
 non-static nested class 
+
+**pass by value**
+-sends a copy of a value
+-it works on datatypes such a int ,float,string
+
+**pass by reference**
+-sends the actual value
+-it works on object
+
+
+```c
+int a=10;
+int b;
+b=a;
+print (b);
+// change b value b but not change a
+b=20; 
+```
