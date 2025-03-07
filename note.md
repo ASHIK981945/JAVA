@@ -171,3 +171,19 @@ print (b);
 // change b value b but not change a
 b=20; 
 ```
+
+**inheritance**
+extracting the poperty
+from parent class (super) to child class (sub class)
+
+
+**function**
+-polymorphism
+-code reusability
+-method overriding
+
+**types**
+-single
+-multiple
+-multilevel
+-hybrid
