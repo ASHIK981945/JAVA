@@ -187,3 +187,15 @@ from parent class (super) to child class (sub class)
 -multiple
 -multilevel
 -hybrid
+
+**command line argument**
+
+```c
+public class Commandline {
+    public static void main(String[] args) {
+        for (int i = 0; i <= args.length; i++) {
+            System.out.println(args[i]);
+        }
+    }
+}
+```
