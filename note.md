@@ -206,3 +206,63 @@ it is used to access
 
 
 **different between method overloading and method overriding**
+
+
+Feature |	Method Overloading |	Method Overriding
+Definition| Defining multiple methods with the same name but different parameters in the same class. |	Redefining a method of the parent class in the child class with the same signature.
+Purpose	 | Used to increase code readability and flexibility by allowing different ways to call a method.| Used to provide a specific implementation of a method already defined in the parent class.
+Parameters | 	Methods must have different parameter lists (different number, type, or order of parameters).|	The method must have the same parameter list as the parent class method.
+Return Type |	Can have different return types. |	Must have the same return type (or a subclass, in case of covariant return types).
+Scope |	Happens within the same class.|	Happens in different classes (parent and child).
+Access Modifiers	| Can have any access modifier.	 | Cannot reduce the visibility of the overridden method (e.g., public in the parent must remain public in the child).
+Static Methods |	Can be overloaded. |	Cannot be overridden; instead, they are hidden.
+Performance |	Faster, as the method call is resolved at compile-time. |	Slower, as the method call is resolved at runtime using dynamic method dispatch.
+
+
+**Example of Method Overloading**
+```c
+  class OverloadingExample {
+    void show(int a) {
+        System.out.println("Integer: " + a);
+    }
+    
+    void show(double a) {
+        System.out.println("Double: " + a);
+    }
+    
+    void show(String a) {
+        System.out.println("String: " + a);
+    }
+
+    public static void main(String[] args) {
+        OverloadingExample obj = new OverloadingExample();
+        obj.show(10);
+        obj.show(10.5);
+        obj.show("Hello");
+    }
+}
+
+```
+
+**Example of Method Overriding:**
+```c
+    class Parent {
+    void display() {
+        System.out.println("This is the parent class");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void display() {
+        System.out.println("This is the child class");
+    }
+    
+    public static void main(String[] args) {
+        Parent obj = new Child();
+        obj.display();  // Calls the overridden method in Child class
+    }
+}
+
+
+```
