@@ -7,4 +7,4 @@ public class Commandline {
 }
 // in terminal
 // javac file name
-// java file name ary
+// java file name arry
