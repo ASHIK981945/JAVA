@@ -201,8 +201,9 @@ public class Commandline {
 ```
 
 **super keyword**
+The super keyword refers to superclass (parent) objects. It is used to call superclass methods, and to access the superclass constructor. 
 it is used to access parent consructor
-it is used to access 
+
 
 
 **different between method overloading and method overriding**
@@ -247,14 +248,14 @@ Performance |	Faster, as the method call is resolved at compile-time. |	Slower, 
 **Example of Method Overriding:**
 ```c
     class Parent {
+        int add;
     void display() {
         System.out.println("This is the parent class");
     }
 }
 
 class Child extends Parent {
-    @Override
-    void display() {
+    void add() {
         System.out.println("This is the child class");
     }
     
