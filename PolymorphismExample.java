@@ -1,10 +1,10 @@
 public class PolymorphismExample {
 
-    // Method Overloading
-    // Example:
-    // 1. int add(int a, int b);
-    // 2. int add(int a, int b, int c);
-    // 3. double add(double a, double b, double c);
+    // // Method Overloading
+    // // Example:
+    // // 1. int add(int a, int b);
+    // // 2. int add(int a, int b, int c);
+    // // 3. double add(double a, double b, double c);
 
     // Polymorphism: Having multiple forms
 
