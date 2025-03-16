@@ -18,14 +18,16 @@ class Cat extends Animal {
     }
 }
 
-public class Overriding {
+public class Dynamicmethoddispakh {
     public static void main(String[] args) {
-        Animal animalsound = new Animal();
+
+        Animal animalsound;
+
+        animalsound = new Dog();
         animalsound.makesound();
-        Dog dogsound = new Dog();
-        dogsound.makesound();
-        Cat c3 = new Cat();
-        c3.makesound();
+
+        animalsound = new Cat();
+        animalsound.makesound();
 
     }
 }

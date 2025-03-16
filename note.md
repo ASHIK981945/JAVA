@@ -267,3 +267,22 @@ class Child extends Parent {
 
 
 ```
+
+
+**Dynamic method dispakh (overriding)**
+ -> it is also know as runtime polymorphism
+
+
+ **Advantages**
+ -> losses couping can be actiered
+      a -> b -> c
+      a -> c
+
+ **it can be achiered in**
+ -> **abstract classes  (need out)**
+            An abstract class can have both abstract (without body) and concrete methods.
+
+
+ -> interface
+
+
