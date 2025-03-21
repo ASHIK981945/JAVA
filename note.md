@@ -664,11 +664,28 @@ abstract class Animal {
  Another way to achieve abstraction in Java, is with interfaces.
 An interface is a completely "abstract class" that is used to group related methods with empty bodies:
 
+interface is a blueprint of class
+it is consist of abstract methods and keywords such as public,static,final
+interface is used to achieve ,mutiple, inheritance
+
 ```c
 // interface
-interface Animal {
-  public void animalSound(); // interface method (does not have a body)
-  public void run(); // interface method (does not have a body)
+interface Parent {
+    void makesound();
+}
+
+class Child implements Parent {
+    public void makesound() {
+        System.out.println("sound of child class");
+    }
+}
+
+public class InterfaceExample {
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.makesound();
+
+    }
 }
 ```
 
@@ -698,24 +715,33 @@ public class FindclassExample {
 ```c
 
 //final class ->useprivate class
-final class First {
-    void firstMethod() {
-        System.out.println("first mehtod called");
-    }
+class Person {
+    String name = "Ashik";
+    final Double salary = 10.00;
+
 }
 
-class Second {
-    void SecondMethod() {
-        System.out.println("second method called");
+class Child extends Person {
+    void dispaly() {
+        System.out.println("name:---->" + name);
+        System.out.println("price:---->" + salary);
+
     }
+
 }
 
-public class FindclassExample {
+public class Classworkfc {
     public static void main(String[] args) {
-        Second secod = new Second();
-        secod.SecondMethod();
+        Child c = new Child();
+        c.name = "person b";
+        // c.salary = 200.00;
+        c.dispaly();
     }
 }
+
 ```
 
 **final keyword**it is a constant keywork
+
+
+**Access_control**
