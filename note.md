@@ -745,3 +745,191 @@ public class Classworkfc {
 
 
 **Access_control**
+
+exp           |  c   | p  | subclass|
+public        |  y   |y   | y |
+private       |  y   |n   |n|
+protected     | y    |y   |y|
+defaunt       |  y   |y   |n|
+
+
+
+**Exception**
+- arithmatic exception
+- array index out of bound  exception 
+- null pointer exception
+- input/output (IO) exception
+- SQL exception
+
+
+```c
+public class Exceptionexmple {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 0;
+        int result = a / b;
+        System.out.println(result);
+        System.out.println("after");
+    }
+}
+```
+
+**Exception handling**
+-try-catch
+-throw
+-throws
+
+```c
+public class ThrowkeywordExamplee {
+
+    // developer a
+    public static int divide(int a, int b) throws ArithmeticException {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+        // developer b
+        try {
+            int result = divide(1, 0);
+            System.out.println(result);
+        } catch (Exception e) {
+            System.out.println("cannot divide by zero");
+        }
+    }
+}
+```
+
+
+**handling string**
+**concatination**
+
+```c
+public class Handlingstringexample {
+    public static void main(String[] args) {
+        // concatination
+        String firstname = "ram";
+        String lastname = "magar";
+        String fullname = firstname + " " + lastname;
+        System.out.println("concatination example:fullname:" + fullname);
+
+    }
+}
+```
+
+
+**conversion**
+
+```c
+     int number = 123;
+        String tonumber = String.valueOf(number);
+        System.out.println(tonumber);
+        System.out.println(tonumber.getClass().getName());
+```
+
+**changing case** 
+
+```c
+   String mixedcase = "hello world";
+        System.out.println("upper case :" + mixedcase.toUpperCase());
+        System.out.println("lowercase :" + mixedcase.toLowerCase());
+``
+
+**extracting charactor**
+
+```c
+    String name = "programmer";
+        char firstchar = name.charAt(0);
+        char fifthchar = name.charAt(4);
+        System.out.println("firstchar:" + firstchar);
+        System.out.println("fifthchar:" + fifthchar);
+```
+
+**searching strings**
+
+```c
+ // searching string
+        String text = "java is a a programming language";
+
+        // check if contain
+        System.out.println("contains programming:" + text.contains("programming"));
+
+        // index of string occurrence
+        int firstindex = text.indexOf("java");
+        System.out.println("first java is at : " + firstindex);
+```
+
+
+**string comparision**
+  ```c
+        String s1 = "java";
+        String s2 = "java";
+        String s3 = new String("java");
+        String s4 = "java";
+
+        // using ==
+        System.out.println("s1 ==s2:" + (s1 == s2));
+        System.out.println("s1==s3:" + (s1 == s3));
+```
+
+
+**thread**
+-single unit of taste
+-java.lang.thread(class)->small projects
+-java.lang.runnable(interface) ->large projects (decoupling / loose coupling / tight coupling)
+
+
+**sleep**
+```c
+public class Threadsleepexample {
+    public static void main(String[] args) {
+        Thread firsThread = new Thread(() -> {
+            try {
+                for (int i = 1; i <= 3; i++) {
+                    System.out.println("first thread count" + i);
+                    Thread.sleep(500);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+        Thread secondThread = new Thread(() -> {
+            try {
+                for (int i = 1; i <= 3; i++) {
+                    System.out.println("second thread  count" + i);
+                    Thread.sleep(1000);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+
+        firsThread.start();
+        secondThread.start();
+    }
+}
+```
+// 4-core cpu (concurrently run 8 threads)
+// 8-core cpu (concurrently run 16threads)
+
+
+**thread priority**
+Every Java thread has a priority that helps the operating system determine the order in which threads are scheduled.
+
+
+**deadlock**
+process1  <- assigned to process1   <- resource1   <- waiting for   <- process2  <- assigned to process2 <- resourced2
+
+
+**file_handeling**
+I/o and streams
+-create file
+-write to file
+-read file 
+-create directories
+
+
+**inter-thread communication**
+-wait()
+-notify()
+-notifyAll()
