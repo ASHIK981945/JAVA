@@ -933,3 +933,34 @@ I/o and streams
 -wait()
 -notify()
 -notifyAll()
+
+**serialization and deserialization**
+
+object -> serialization -> byte stream (save) ->deserialization -> object
+
+
+
+
+**AWT (abstract window toolkit)**
+-uesd to develop GUI 
+-components
+   *button
+   *test field
+
+**swing**
+used to develop GUI application
+-better and similar us in almost all operating system
+    - components
+     *jbutton
+     *jtest field
+
+
+**event handing**
+-on mouseclick()
+-on mouseh0ver()
+-keyboardevents
+
+Layout manger
+-flow layout
+-border layout
+-grid layout
