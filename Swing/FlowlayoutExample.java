@@ -7,8 +7,9 @@ public class FlowlayoutExample {
          JFrame frame= new JFrame("swing Event handing");
         frame.setSize(350,300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new FlowLayout(FlowLayout.LEFT));
+        frame.setLayout(new FlowLayout(FlowLayout.CENTER));
 
+        
         JButton button1 =new JButton("Click me");
         frame.add(button1);
 

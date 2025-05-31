@@ -957,10 +957,63 @@ used to develop GUI application
 
 **event handing**
 -on mouseclick()
--on mouseh0ver()
+-on mousehover()
 -keyboardevents
 
-Layout manger
--flow layout
--border layout
--grid layout
+**Layout manger**
+-flow layout(left,right,center,leading,trailing)
+-border layout(east,south,wast,north)
+-grid layout(2*3)
+
+
+# Serializable Interface in Java
+The Serializable interface is present in **java.io package**. It is a **marker interface**. A Marker Interface does not have any methods and fields. Thus classes implementing it do not have to implement any methods. Classes implement it if they want their instances to be Serialized or Deserialized. Serialization is a mechanism of converting the state of an object into a byte stream. Serialization is done using **ObjectOutputStream**.
+
+
+# Deserialization Interface in Java
+Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory. This mechanism is used to persist the object. Deserialization is done using ObjectInputStream. Thus it can be used to make an eligible for saving its state into a file. 
+
+
+**choice component**
+jcheckbox
+Radio button
+jcombo box
+
+**Mvc(model view controller)**
+
+model->handles data and logic
+view ->handles us Element (swing components)
+controller-> Interect with user and upade view/model
+
+
+**MDI(multiple Document Interface )**
+
+**jtalbe(display data in tabular form)**
+-Jtextarea
+
+**Abstract classes**
+
+
+```c
+class abc implementExample{
+    //override
+      first();
+    //override
+     second();
+     //override
+     third();
+
+}
+
+interface example
+{
+    void first();
+    void second();
+    void third();
+}
+```
+
+-mouse adapter
+-key adapter
+-window adapter
+
